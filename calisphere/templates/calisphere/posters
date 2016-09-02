@@ -1,0 +1,53 @@
+{% extends "calisphere/base.html,calisphere/pjaxTemplates/pjax-base.html"|pjax:request %}
+
+{% block page-metadata %}
+{% include "calisphere/microdata.html" with title='About' %}
+{% endblock %}
+
+{% block content %}
+
+<h1>Calisphere Posters</h1>
+
+<!-- Begin Static About Component -->
+
+<div class="static">
+
+  <div class="col-sm-8 static__main">
+
+		<p>Share your love of Calisphere! We offer free posters for students, teachers, and librarians. We’ll even mail them at no charge!</p>
+
+		<p>To order posters, please send an email with the following information to <a href="mailto:calisphere@cdlib.org">calisphere@cdlib.org</a>. You can also contact us about special orders for large groups.</p>
+
+		<ul>
+		<li>Name</li>
+		<li>Occupation</li>
+		<li>Mailing address</li>
+		<li>Desired design and quantities</li>
+		</ul>
+<p>Each poster measures 14.75 x 24 inches.</p>
+
+<p>
+/calisphere_images/poster_1bridge.jpg
+Golden Gate Bridge / San Francisco Public Library
+<a href="">View source image</a>
+<p>
+
+
+  </div>
+
+  <div class="col-sm-4">
+    
+    <!-- Add class: 'static__sidebar' above next to col-sm-4 to add sidebar border styles -->
+
+    <!-- <h2 class="static__sidebar-heading">Sidebar heading here</h2>
+
+    <p>Sidebar content here</p>
+    </a> -->
+
+  </div>
+
+</div>
+
+<!-- End Static About Component -->
+{{ q }}
+{% endblock %}
